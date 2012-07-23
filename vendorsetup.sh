@@ -1,0 +1,5 @@
+add_lunch_combo aba_grouper-userdebug
+add_lunch_combo aba_maguro-userdebug
+#add_lunch_combo aba_tf101-userdebug
+add_lunch_combo aba_toro-userdebug
+add_lunch_combo aba_toroplus-userdebug
