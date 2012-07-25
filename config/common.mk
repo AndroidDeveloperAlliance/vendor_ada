@@ -1,4 +1,4 @@
-PRODUCT_BRAND := AllianceMOD
+PRODUCT_BRAND ?= AllianceMOD
 
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
@@ -16,7 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=true
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
@@ -56,15 +56,12 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
-    Basic \
     HoloSpiralWallpaper \
-    MagicSmokeWallpapers \
     NoiseField \
     Launcher2 \
     Galaxy4 \
     LiveWallpapers \
     LiveWallpapersPicker \
-    VisualizationWallpapers \
     PhaseBeam
 
 
@@ -75,7 +72,7 @@ PRODUCT_VERSION_MAJOR = v1
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-Alpha1
 
-ADA_VERSION := $(PRODUCT_BRAND)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)
+ADA_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(ADA_VERSION)
