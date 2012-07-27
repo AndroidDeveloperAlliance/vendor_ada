@@ -28,8 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/ada/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
-    vendor/ada/prebuilt/common/etc/init.d/90logger:system/etc/init.d/90logger
+    vendor/ada/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
