@@ -75,3 +75,5 @@ ADA_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSI
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(ADA_VERSION)
+# T-Mobile theme engine
+$(call inherit-product, vendor/ada/config/themechooser.mk)
