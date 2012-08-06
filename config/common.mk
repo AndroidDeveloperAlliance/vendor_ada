@@ -53,6 +53,7 @@ PRODUCT_PACKAGES += \
 # Optional ABA packages
 PRODUCT_PACKAGES += \
     VideoEditor \
+    Camera \
     SoundRecorder \
     HoloSpiralWallpaper \
     NoiseField \
