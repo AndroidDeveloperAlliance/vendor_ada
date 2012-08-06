@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     NoiseField \
     Launcher2 \
     Galaxy4 \
+    Gallery2 \
     LiveWallpapers \
     LiveWallpapersPicker \
     PhaseBeam
