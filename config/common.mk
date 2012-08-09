@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LiveWallpapers \
     LiveWallpapersPicker \
-    PhaseBeam
+    PhaseBeam \
+    OTAUpdater
 
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/ada/overlay/dictionaries
@@ -75,6 +76,9 @@ PRODUCT_VERSION_MAINTENANCE = Alpha4
 ADA_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.modversion=$(ADA_VERSION)
+  ro.modversion=$(ADA_VERSION) \
+  otaupdater.otaid=<ada \
+  otaupdater.otatime=$(ro.build.date) \
+  otaupdater.otaver=$(ADA_VERSION) \
 # T-Mobile theme engine
 $(call inherit-product, vendor/ada/config/themechooser.mk)
