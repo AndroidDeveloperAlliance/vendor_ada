@@ -62,8 +62,7 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LiveWallpapers \
     LiveWallpapersPicker \
-    PhaseBeam \
-    OTAUpdater
+    PhaseBeam
 
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/ada/overlay/dictionaries
