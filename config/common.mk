@@ -76,7 +76,7 @@ ADA_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSI
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(ADA_VERSION) \
-  otaupdater.otaid=<ada \
+  otaupdater.otaid=ada \
   otaupdater.otatime=$(ro.build.date) \
   otaupdater.otaver=$(ADA_VERSION) \
 # T-Mobile theme engine
