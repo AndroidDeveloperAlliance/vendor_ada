@@ -55,14 +55,9 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     Camera \
     SoundRecorder \
-    HoloSpiralWallpaper \
-    NoiseField \
     Launcher2 \
-    Galaxy4 \
     Gallery2 \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    PhaseBeam
+    LiveWallpapersPicker
 
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/ada/overlay/dictionaries
@@ -70,14 +65,12 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/ada/overlay/common
 
 PRODUCT_VERSION_MAJOR = v1
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = Alpha5
+PRODUCT_VERSION_MAINTENANCE = Alpha6
 
 ADA_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.modversion=$(ADA_VERSION) \
-  otaupdater.otaid=ada \
-  otaupdater.otatime=$(ro.build.date) \
-  otaupdater.otaver=$(ADA_VERSION) \
+  ro.modversion=$(ADA_VERSION)
+
 # T-Mobile theme engine
 $(call inherit-product, vendor/ada/config/themechooser.mk)
