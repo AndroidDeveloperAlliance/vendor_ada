@@ -48,16 +48,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Camera \
     LatinIME \
-    SuperSU.apk
+    SuperSU.apk \
+    Launcher2 \
+    Gallery2 \
+    LiveWallpapersPicker \
+    ADAPapers
+
 
 # Optional ABA packages
 PRODUCT_PACKAGES += \
     VideoEditor \
-    Camera \
-    SoundRecorder \
-    Launcher2 \
-    Gallery2 \
-    LiveWallpapersPicker
+    SoundRecorder
 
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/ada/overlay/dictionaries
