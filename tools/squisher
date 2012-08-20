@@ -93,6 +93,7 @@ rm -rf $REPACK/ota/recovery
 
 # Determine what to name the new signed package
 MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
+PRODUCT_BRAND= AllianceMOD
 OUTFILE=$OUT/$PRODUCT_BRAND-$MODVERSION-$TARGET_PRODUCT.zip
 echo MODVERSION: $MODVERSION
 
@@ -109,6 +110,7 @@ java -Xmx1024m \
 echo
 printf "Cleaning up..."
 rm -rf $REPACK
+rm -rf $OTAPACKAGE
 echo
 
 # Create a md5 checksum image of the repacked package
