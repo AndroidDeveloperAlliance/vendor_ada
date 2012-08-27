@@ -5,3 +5,4 @@ add_lunch_combo ada_toroplus-userdebug
 add_lunch_combo ada_n7000-userdebug
 add_lunch_combo ada_tf101-userdebug
 add_lunch_combo ada_tf700t-userdebug
+add_lunch_combp ada_spyder-userdebug
