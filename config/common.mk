@@ -50,9 +50,9 @@ PRODUCT_PACKAGES += \
     LatinIME \
     SuperSU.apk \
     Launcher2 \
-    Gallery2 \
     LiveWallpapersPicker \
-    ADAPapers
+    ADAPapers \
+    Torch
 
 
 # Optional ABA packages
